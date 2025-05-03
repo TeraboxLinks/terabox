@@ -49,7 +49,7 @@
 			x= 0;
 			y= 0;
 			
-			function z(a){	
+			function w(a){	
 				$("<div></div>").attr({
 					"id": a[0],
 					"style": "background-image: url('https://drive.google.com/thumbnail?id=" + a[2] + " '); background-repeat: repeat; background-attachment: ; background-size: 10%;"
@@ -61,7 +61,32 @@
 					"id": a[1],
 					"src": "https://drive.google.com/thumbnail?id=" + a[3]
 				}).click(function(){
-					window.location.href= "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(USA)%20(EnFrEs).zip?token=cHNealNkXU9FFHNqXnQdYV9VQhJwdF5xUw%3D%3D"
+					window.location.href= "https://1024terabox.com/s/" + a[4];
+				}).appendTo("figure:last");
+				
+				$("<figcaption></figcaption>").css({
+					"background-color": "black",
+					"fontSize": "40px",
+					"font-weight": "bolder"
+				}).html(a[5]).appendTo("figure:last");
+								
+				$("<br />").appendTo("#contenido");
+				
+			};
+		
+			function z(a){	
+				$("<div></div>").attr({
+					"id": a[0],
+					"style": "background-image: url('https://drive.google.com/thumbnail?id=" + a[2] + " '); background-repeat: repeat; background-attachment: ; background-size: 20%;"
+				}).appendTo("#contenido");
+	
+				$("<figure></figure>").appendTo("div:last");
+				
+				$("<img></img>").attr({
+					"id": a[1],
+					"src": "https://drive.google.com/thumbnail?id=" + a[3]
+				}).click(function(){
+					window.location.href= a[4];
 				}).appendTo("figure:last");
 				
 				$("<figcaption></figcaption>").css({
@@ -75,7 +100,7 @@
 			};
 			
 			function ads() {
-				iframeSrc= "http://50.30.37.36:1935/live/smil:MyStream.smil/playlist.m3u8"
+				iframeSrc= ""
 				$("<div></div>").appendTo("#contenido");
 				$("<iframe></iframe>").attr({
 					"class": "adsTerra",
@@ -108,10 +133,10 @@
 	<body id= "contenido">
 		
 		<nav>
-			<a href= "">Series y Peliculas</a> |
-			<a href= "">MP3</a> |
-			<a href= "">Apps</a> |
-			<a href= "">Libros</a> |	
+			<a href= "http://teraboxlinks.github.io/terabox">Series y Peliculas</a> |
+			<a href= "http://teraboxlinks.github.io/terabox">MP3</a> |
+			<a href= "http://teraboxlinks.github.io/terabox">Apps</a> |
+			<a href= "http://teraboxlinks.github.io/terabox">Libros</a> |	
 			<a href= "juegos.html">Juegos</a>
 		</nav>			
 				
@@ -134,7 +159,7 @@
 			z(["numero", "#", "", "", "", "<h1>#</h1>"]);
 			ads();	
 			
-			z(["71", "", "1RB4ZxoJP7_wxfrgl5lvfaL3xSGy3L4Rn", "1RBhki3HKGI71QJ93aciAP1UYdaUhFT4z", "", "GOD OF WAR<br />GHOST OF ESPARTA<br />PSP"]);x+=1;
+			w(["godofwar", "ghostofsparta", "145s95ZGfapREV3fNL0hKF1JJ-52XWiy5", "13wsbkSh30D777SbRdC7NET8QXA7ZKkEf", "https://sto.romsfast.com/PSP-Complete/Redump/God%20of%20War%20-%20Ghost%20of%20Sparta%20(USA)%20(EnFrEs).zip?token=cHNealNkXU9FFHNqXnQdYV9VQhJwdF5xUw%3D%3D", "GOD OF WAR<br />GHOST OF ESPARTA<br />USA (EnFrEs) 1.09G ZIP PSP"]);x+=1;
 			
 				
 			z(["100wolf", "100lobo", "", "", "1g3E4U_H3MD-xVDcnkKBGog", "100% WOLF<br />354392020P1<br />Lat [] MP4"]);
